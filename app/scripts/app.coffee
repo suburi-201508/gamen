@@ -23,7 +23,7 @@ angular
   .config ($routeProvider) ->
     $routeProvider
       .when '/',
-        templateUrl: 'views/main.html'
+        templateUrl: 'views/createapi.html'
         controller: 'MainCtrl'
         controllerAs: 'main'
       .when '/about',
