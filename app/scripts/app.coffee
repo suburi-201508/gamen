@@ -19,6 +19,7 @@ angular
     'ngSanitize'
     'ngTouch'
     'ngMaterial'
+    'ngHolder'
   ]
   .value 'apiEndpoint', 'http://suburi.example.com'
   .config ($routeProvider) ->
