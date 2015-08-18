@@ -15,6 +15,9 @@ angular.module 'gamenApp'
       $scope
       CreateApiService
     ) ->
+      $scope.apiUrl = 78
+      $scope.previewFlag = true
+      $scope.data = undefined
       $scope.createApiString = () ->
         $scope.apiUrl = CreateApiService(
           $scope.tagUrl

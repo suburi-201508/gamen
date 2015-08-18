@@ -27,6 +27,8 @@ module.exports = (config) ->
       'bower_components/angular-sanitize/angular-sanitize.js'
       'bower_components/angular-touch/angular-touch.js'
       'bower_components/angular-material/angular-material.js'
+      'bower_components/holderjs/holder.js'
+      'bower_components/angular-holderjs/src/holder.js'
       'bower_components/angular-mocks/angular-mocks.js'
       # endbower
       # bower:coffee
