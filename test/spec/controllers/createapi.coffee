@@ -1,17 +1,17 @@
 'use strict'
 
-describe 'Controller: CreateapiCtrl', ->
+describe 'Controller: CreateApiCtrl', ->
 
   # load the controller's module
   beforeEach module 'gamenApp'
 
-  CreateapiCtrl = {}
+  CreatAapiCtrl = {}
   scope = {}
 
   # Initialize the controller and a mock scope
   beforeEach inject ($controller, $rootScope) ->
     scope = $rootScope.$new()
-    CreateapiCtrl = $controller 'CreateapiCtrl', {
+    CreateApiCtrl = $controller 'CreateApiCtrl', {
       $scope: scope
     }
 

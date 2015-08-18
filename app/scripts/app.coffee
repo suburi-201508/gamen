@@ -20,12 +20,13 @@ angular
     'ngTouch'
     'ngMaterial'
   ]
+  .value 'apiEndpoint', 'http://suburi.example.com'
   .config ($routeProvider) ->
     $routeProvider
       .when '/',
         templateUrl: 'views/createapi.html'
-        controller: 'MainCtrl'
-        controllerAs: 'main'
+        controller: 'CreateApiCtrl'
+        controllerAs: 'createApi'
       .when '/about',
         templateUrl: 'views/about.html'
         controller: 'AboutCtrl'

@@ -8,9 +8,18 @@
  # Controller of the gamenApp
 ###
 angular.module 'gamenApp'
-  .controller 'CreateapiCtrl', ($scope) ->
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate'
-      'AngularJS'
-      'Karma'
+  .controller 'CreateApiCtrl', [
+    '$scope'
+    'CreateApiService'
+    (
+      $scope
+      CreateApiService
+    ) ->
+      $scope.createApiString = () ->
+        $scope.apiUrl = CreateApiService(
+          $scope.tagUrl
+          $scope.tagQuerySelector
+          $scope.tagUserAgent
+          $scope.tagDevice
+        )
     ]
