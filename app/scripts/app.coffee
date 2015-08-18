@@ -28,10 +28,6 @@ angular
         templateUrl: 'views/createapi.html'
         controller: 'CreateApiCtrl'
         controllerAs: 'createApi'
-      .when '/about',
-        templateUrl: 'views/about.html'
-        controller: 'AboutCtrl'
-        controllerAs: 'about'
       .otherwise
         redirectTo: '/'
 
