@@ -10,14 +10,15 @@
 ###
 angular
   .module 'gamenApp', [
-    'ngAnimate',
-    'ngAria',
-    'ngCookies',
-    'ngMessages',
-    'ngResource',
-    'ngRoute',
-    'ngSanitize',
+    'ngAnimate'
+    'ngAria'
+    'ngCookies'
+    'ngMessages'
+    'ngResource'
+    'ngRoute'
+    'ngSanitize'
     'ngTouch'
+    'ngMaterial'
   ]
   .config ($routeProvider) ->
     $routeProvider
