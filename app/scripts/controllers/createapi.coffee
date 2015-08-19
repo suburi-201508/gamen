@@ -11,18 +11,25 @@ angular.module 'gamenApp'
   .controller 'CreateApiCtrl', [
     '$scope'
     'CreateApiService'
+    'GetTagService'
     (
       $scope
       CreateApiService
+      GetTagService
     ) ->
-      $scope.apiUrl = 78
       $scope.previewFlag = true
       $scope.data = undefined
-      $scope.createApiString = () ->
+
+      $scope.CreateApiString = () ->
         $scope.apiUrl = CreateApiService(
           $scope.tagUrl
           $scope.tagQuerySelector
           $scope.tagUserAgent
           $scope.tagDevice
         )
+
+      $scope.GetTag = () ->
+        GetTagService $scope.apiUrl
+          .then (res) ->
+            $scope.data = res.data
     ]

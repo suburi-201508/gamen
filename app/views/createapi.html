@@ -1,6 +1,6 @@
 <div class="createapi">
   <div layout="column" flex>
-    <md-toolbar class="md-whiteframe-z2 content-toolbar">
+    <md-toolbar class="md-whiteframe-z2">
       <div class="md-toolbar-tools">
         <h2 class="md-toolbar-item">広告取得APIの作成</h2>
       </div>
@@ -29,7 +29,7 @@
               <input ng-model="tagDevice" type="text" class="md-input" id="tag-device">
             </md-input-container>
           </div>
-          <md-button ng-click="createApiString()" class="md-raised md-primary createapi-submit">
+          <md-button ng-click="CreateApiString()" class="md-raised md-primary createapi-submit">
             広告取得APIを作成する
           </md-button>
         </form>
@@ -48,11 +48,12 @@
           </md-content>
         </md-content>
         <div layout="column">
-          <md-button class="md-raised md-warn">
+          <md-button ng-click="GetTag()" class="md-raised md-warn">
             プレビューを表示する
           </md-button>
           <div layout="row" layout-padding layout-align="center">
             <img ng-show="!data" class="createapi-preview-img" holder data-src="holder.js/400x200?text=ここにプレビュー">
+            <img ng-show="data" ng-src="{{data.image}}">
           </div>
         </div>
       </md-content>
