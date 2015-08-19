@@ -20,6 +20,7 @@ angular
     'ngTouch'
     'ngMaterial'
     'ngHolder'
+    'ngMockE2E'
   ]
   .value 'apiEndpoint', 'http://suburi.example.com'
   .config ($routeProvider) ->
